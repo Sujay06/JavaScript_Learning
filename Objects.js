@@ -151,3 +151,25 @@ if ('color' in circle8) console.log ("yes");    //Does not display anything.
 
 console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//9.Cloning an Object:
+
+const circle9 = {
+    radius : 10,
+    draw(){
+        console.log("Draw the circle9");
+    }
+};
+console.log("circle9: ", circle9);
+
+//Clone all the properties of circle9 to circle99. use "Object.assign" operator.
+const circle99 = Object.assign({},circle9); 
+//(OR)
+//const circle99 = Object.assign({color: 'red'},circle9);
+console.log("circle99: ", circle99);
+
+const circle999 = Object.assign ({thickness: 10}, circle99);
+console.log("circle999: ", circle999);
+
+console.log("\n");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
