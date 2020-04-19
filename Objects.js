@@ -69,3 +69,21 @@ console.log(circle2);
 
 console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Dynamic nature of Objects: Modifying objects after they are created.
+const circle3 = {
+    radius: 1
+};
+
+//adding properties after circle3 has been declared.
+circle3.color = 'blue';
+circle3.draw = ()=>{};
+circle3.thickness= '5mm';
+
+//to remove a property use "delete" operator
+delete circle3.thickness;
+
+console.log(circle3);
+
+console.log("\n");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
