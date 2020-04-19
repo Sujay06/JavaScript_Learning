@@ -31,3 +31,22 @@ circle.draw();  //calling "draw" method of circle obj.
 
 console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Factory Function to create objects: Creating all logics in one place.
+
+function createCircle(radius){
+    return {
+        radius,
+        draw(){ console.log("Draw the circle with the given specifications"); }
+    };
+}
+const circle1 = createCircle(10);
+console.log(circle1);
+
+const circle2 = createCircle(2);
+console.log(circle2);
+
+const circle3 = createCircle(25);
+console.log(circle3);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
