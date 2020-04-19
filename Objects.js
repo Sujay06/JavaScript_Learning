@@ -122,3 +122,32 @@ console.log("y1:", y1); //y1 takes the value of 200 as well.
 
 console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//8.Enumerating  property of objects:
+    //working with for-in, for-of loops
+const circle8 = {
+    radius8: 1,
+    draw(){
+        console.log("Draw a circle!!!");
+    }
+};
+
+//for-in:
+for (let key in circle8)
+  //console.log(key);   //Displays only keys
+    console.log(key,circle8[key]);     //Displays both key-value pairs
+
+//for-of: Accesing properties and methods-1
+for (let key of Object.keys(circle8))  
+    console.log(key);   //Displays only keys. "Object.keys(circle8)" calls in the properties of circle8, calling just the circle8 throws "Obj not iterable" error.
+
+//for-of: Accesing properties and methods-2
+for (let entry of Object.entries(circle8))  
+console.log(entry); //Object.entries(circle8) returns every property as an array.
+
+//if-in: to search for property of the obj, passed in if().
+if('radius8' in circle8) console.log("YES");       //Displays YES
+if ('color' in circle8) console.log ("yes");    //Does not display anything.
+
+console.log("\n");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
