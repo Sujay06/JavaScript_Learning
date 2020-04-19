@@ -12,7 +12,7 @@
     //1.An object may have different properties, like numbers, strings, booleans and function(s).
     //2.If a function is part of an object, then it is called as "method".
 
-//Creating an object(circle) with different properties(boolean, numebrs and a method)
+//1.Creating an object(circle) with different properties(boolean, numebrs and a method)
 
 const circle = {
     radius: 1,
@@ -32,7 +32,8 @@ circle.draw();  //calling "draw" method of circle obj.
 console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Factory Function to create objects: Creating all logics in one place.
+//2.Factory Function to create objects: Creating all logics in one place.
+    //Uses Camel naming convention: oneTwoThreeFour
 
 function createCircle(radius){
     return {
@@ -43,10 +44,28 @@ function createCircle(radius){
 const circle1 = createCircle(10);
 console.log(circle1);
 
-const circle2 = createCircle(2);
+const circle11 = createCircle(2);
+console.log(circle11);
+
+const circle111 = createCircle(25);
+console.log(circle111);
+
+console.log("\n");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//3.Constructor functions to create Objects
+    //Uses this  and new keywords.
+    //uses Pascal naming convention: OneTwoThreeFOur
+
+function Circle(radius){
+    this.radius = radius,
+    this.draw = ()=>{
+        console.log("Draw a circle!");
+    } 
+}
+
+const circle2 = new Circle(100);
 console.log(circle2);
 
-const circle3 = createCircle(25);
-console.log(circle3);
-
+console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
