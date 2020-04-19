@@ -162,7 +162,7 @@ const circle9 = {
 };
 console.log("circle9: ", circle9);
 
-//Clone all the properties of circle9 to circle99. use "Object.assign" operator.
+//Method-01: Using Assign operator
 const circle99 = Object.assign({},circle9); 
 //(OR)
 //const circle99 = Object.assign({color: 'red'},circle9);
@@ -171,5 +171,15 @@ console.log("circle99: ", circle99);
 const circle999 = Object.assign ({thickness: 10}, circle99);
 console.log("circle999: ", circle999);
 
+//Method-02: Using Spread Operator
+const anotherCircle = {...circle9};     
+console.log("anotherCircle: ", anotherCircle);
+
 console.log("\n");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//10.Garbage Collection in Objects:
+    
+    //Refers to memory allocation and de-allocation for variables. This happens automatically in the background.
+    
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
