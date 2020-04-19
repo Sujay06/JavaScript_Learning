@@ -88,4 +88,37 @@ console.log(circle3);
 console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//5.
+//5,6.Constructor Properties:
+
+//1.When we create an object using object-literal syntax(factory functions),internally the JS engine uses a constructor function to define it.
+
+//2.Every function in JS is an Object!!.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//7.Primitives vs Reference Types:
+
+//Primitives:
+let x = 10;
+let y = x;
+
+x=20;
+
+console.log("x:", x);   //x takes the value of 20
+console.log("y:", y);   //y still retains the value of 10.
+
+//Reference:
+let x1 = {value: 100};
+let y1 = x1;
+
+x1.value= 200;
+
+console.log("x1:", x1); //x1 takes the value of 200
+console.log("y1:", y1); //y1 takes the value of 200 as well.
+
+//Note:
+    //1.Primitives are copied by their values.
+    //2.Objects/Reference types are copied by their reference.
+
+console.log("\n");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
