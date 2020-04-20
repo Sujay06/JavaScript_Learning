@@ -183,3 +183,24 @@ console.log("\n");
     //Refers to memory allocation and de-allocation for variables. This happens automatically in the background.
     
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//11.Math.
+    //Refer to Javascript math operators on web.
+
+//Finding the sqaureroot of a number
+const sqroot = Math.sqrt(100);
+console.log("Square root is: ", sqroot);
+
+//Finding the largest and smallest numbers in the list
+const largest = Math.max(1,2,3,45,100,101,1000,1002);
+const smallest =  Math.min(11111,249230,22,45,6);
+console.log("Largest number in the list is : ", largest);
+console.log("Smallest number in the list is : ", smallest);
+
+
+//Rounding of a number
+const roundoff = Math.round(1.4);
+console.log("Nearest whole number is :", roundoff);
+
+console.log("\n");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
