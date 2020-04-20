@@ -266,18 +266,42 @@ console.log("\n");
 
 //Ex-1: Creating an address obj with properties street,city and Zipcode. Create a showAddress function to display all the key value pairs.
 
-const address = {
+const address1 = {
     street: 'abc',
     city: 'xyz',
     zipcode: '499841'
 };
 
-function showAddress(address){
-    for (let key in address)
-        console.log(key, address[key]);
+function showAddress(address1){
+    for (let key in address1)
+        console.log(key, address1[key]);
 }
 
-showAddress(address);
+showAddress(address1);
+
+console.log('\n');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Ex-2: Write factory and constructor functions to initialise the object
+
+const address2 = factoryFunction('abc', 'pqr', 12344);
+console.log("address2: ",address2);
+function factoryFunction(street, city, zipCode){
+   return { 
+    street,
+    city,
+    zipCode
+   }
+}; 
+
+const address22 = new  ConstructorFunction('abcc', 'aadfj', 12983791);
+console.log("Address22: ", address22);
+
+function ConstructorFunction(street, city, zipCode){
+        this.street = street,
+        this.city = city,
+        this.zipCode = zipCode
+};
 
 console.log('\n');
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
