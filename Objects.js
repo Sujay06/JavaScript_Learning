@@ -340,7 +340,7 @@ console.log('\n');
 
 //Ex-4: Create a post object literal
 
-const post = {
+let post = {
     title: 'a',
     body: 'b',
     author: 'c',
@@ -353,6 +353,23 @@ const post = {
 };
 
 console.log(post);
+
+console.log('\n');
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Ex-5:Create a constructor function to create a post object.
+
+let post1 = new Post('a', 'b', 'c');
+console.log("Post1: ", post1);
+
+function Post(title, author, body){
+    this.title =  title;
+    this.author =  author;
+    this.body = body;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;    
+};
 
 console.log('\n');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
