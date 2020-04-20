@@ -222,3 +222,20 @@ console.log("trimming to the left: ", msg.trimLeft());
 
 console.log("\n");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//13.Template Literals:
+    //Refers to usage of ``
+    //Useful in constructing emails
+    //can add placeholders.
+
+const msg1 = "This is just a message!";
+console.log("msg1:", msg1);
+
+const msg2 = `This is yet 
+'another' 
+message!!`;
+console.log("msg2:", msg2);
+
+
+console.log("\n");
+///////////////////////////////////////////////////////////////////////////////////////////////////////
