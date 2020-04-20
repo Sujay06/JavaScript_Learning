@@ -305,3 +305,35 @@ function ConstructorFunction(street, city, zipCode){
 
 console.log('\n');
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Ex-3: Create 2 functions to check whether both the addresses are same and equal
+
+let address11 = new Address('a','b','c');
+let address12 = new Address('a','b','c');
+let address13 = address11;
+
+console.log(areEqual(address11, address12));    //returns true if they have same value in different memory locations.
+console.log(areEqual(address11, address13)); 
+console.log(areSame(address11, address12));     //returns false if they refernece different memory location.
+console.log(areSame(address11, address13));   //returns true if they are referencing same memory locations.
+
+//to define and intialise the object.
+function Address (street, city, zipCode){
+    this.street =  street,
+    this.city = city,
+    this.zipCode = zipCode
+};
+
+//to check if they have same values.
+function areEqual(address11, address12){
+    return address11.street === address12.street && address11.city === address12.city && 
+    address11.zipCode === address12.zipCode ;
+};
+
+//to check if they refernce same memory locations.
+function areSame(address11, address12){
+    return address11 === address12 ;
+};
+
+console.log('\n');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
