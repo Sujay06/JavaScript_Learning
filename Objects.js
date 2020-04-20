@@ -263,3 +263,21 @@ console.log("newDate:", newDate);
 
 console.log("\n");
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Ex-1: Creating an address obj with properties street,city and Zipcode. Create a showAddress function to display all the key value pairs.
+
+const address = {
+    street: 'abc',
+    city: 'xyz',
+    zipcode: '499841'
+};
+
+function showAddress(address){
+    for (let key in address)
+        console.log(key, address[key]);
+}
+
+showAddress(address);
+
+console.log('\n');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
