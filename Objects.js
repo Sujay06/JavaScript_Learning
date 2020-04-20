@@ -204,3 +204,21 @@ console.log("Nearest whole number is :", roundoff);
 
 console.log("\n");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//12.Strings.
+    //Refer to Javascript string methods,escape operators and objects on web
+
+const msg = '  This is my  first message  '; 
+
+console.log("msg: ", msg);
+console.log("length: ", msg.length);
+console.log("msg[0] : ", msg[0]);
+console.log("does message include word *the* ??", msg.includes('the'));
+console.log("index of :", msg.indexOf('is'));
+console.log("Replace first with second :", msg.replace('first','second'));
+console.log("Changing msg to uppercase: ", msg.toUpperCase());
+console.log("trimming the msg: ", msg.trim());
+console.log("trimming to the left: ", msg.trimLeft());
+
+console.log("\n");
+///////////////////////////////////////////////////////////////////////////////////////////////////////
