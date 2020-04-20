@@ -239,3 +239,27 @@ console.log("msg2:", msg2);
 
 console.log("\n");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//14.Date Object.
+
+const today =  new Date();
+const newDate = new Date('April 6 1995 10:00');
+
+//get attributes from the date.
+console.log(today.getDate());
+console.log(today.getHours());
+console.log(today.getMinutes());
+
+//forcefully set a year.
+today.setFullYear(2000);
+
+//commonly used format in web and mobile applications:
+console.log(today.toDateString());
+console.log(today.toTimeString());
+console.log(today.toISOString());
+
+console.log("today:", today);
+console.log("newDate:", newDate);
+
+console.log("\n");
+//////////////////////////////////////////////////////////////////////////////////////////////////////
