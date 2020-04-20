@@ -373,3 +373,15 @@ function Post(title, author, body){
 
 console.log('\n');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Ex-6: Creating price range objects.
+
+let priceRanges = [
+    {label: '$', tooltip: 'Inexpensive', minPerPerson: 0, maxPerPerson: 10},
+    {label: '$$', tooltip: 'Moderate', minPerPerson: 11, maxPerPerson: 20},
+    {label: '$$$', tooltip: 'Expensive', minPerPerson: 21, maxPerPerson: 100},
+    {label: '$$$$', tooltip: 'High End', minPerPerson: 101, maxPerPerson: 1000}
+]; 
+
+console.log('\n');
+////////////////////////////////////////////////////////////////////////////////////////////////////////
