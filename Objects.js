@@ -337,3 +337,22 @@ function areSame(address11, address12){
 
 console.log('\n');
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Ex-4: Create a post object literal
+
+const post = {
+    title: 'a',
+    body: 'b',
+    author: 'c',
+    views: 10,
+    comments: [ 
+        {author: 'a', body: 'b'},
+        {author: 'c', body: 'd'}
+    ],
+    isLive : true
+};
+
+console.log(post);
+
+console.log('\n');
+////////////////////////////////////////////////////////////////////////////////////////////////////////
